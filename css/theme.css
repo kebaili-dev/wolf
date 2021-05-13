@@ -1,0 +1,240 @@
+@font-face {
+	font-family: "Bodega Sans";
+	src: url("../fonts/BodegaSans_Black.ttf");
+}
+*{
+	box-sizing:border-box;
+}
+/******** BODY ******************/
+body{
+	
+	background-color: #333;
+	background-image: url(../img/bg_body.svg);
+	
+}
+/**********MAIN*************/
+main{
+	width:85%;
+	margin:auto;
+}
+
+/************** HEADER ET NAV *********/
+header{
+	display:flex;
+	justify-content:space-around;
+	background: linear-gradient(110deg, white 0%, white 50%, #333 50%, #333 100%);
+	align-items:center;
+	color:white;
+	
+}
+
+
+header nav {
+	display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+   	text-align:right;
+    padding:25px;
+}
+header nav a{
+	font-family:"Bodega Sans";
+	text-decoration:none;
+	color:white;
+	font-size:2em;
+	line-height:1.2;
+}
+h1{
+	text-align:center;
+	font-family:"Bodega Sans" ;
+	font-size:2rem;
+	color:white;
+	line-height:2em;
+}
+h2{
+	font-family: "Bodega Sans";
+	color:white;
+}
+h3{
+	font-family: "Bodega Sans";
+    text-align: center;
+    color: orange;
+    border-bottom: 2px solid orange;
+    padding-bottom:5px;
+    
+}
+
+/******** Section ARTICLE MOTO ***********/
+.moto{
+	display:flex;
+	justify-content:space-between;
+		
+	font-size:14px;
+	color:grey;
+	padding-bottom: 35px;
+}
+
+.moto article{
+	width:21%;
+	background-color: #fff;
+	text-align:center;
+
+	padding:15px;
+    display:flex;
+    flex-direction:column;
+	justify-content:space-around;
+	align-items: stretch;
+}
+
+.moto article img{
+	max-width:100%;
+
+}
+
+
+.orange{
+	color: orange;
+}
+.moto a{
+	text-decoration:none;
+	color:white;
+	background-color:orange;
+	
+	padding: 10px;
+	
+	;
+}
+
+/******** Section ARTICLE Video ***********/
+
+
+.detail{
+	display:flex;
+	
+}
+
+.detail article{
+	width:50%;
+	
+}
+
+.detail p{
+	color:lightgrey;
+	font-family:'Bodega' serif;
+	line-height:1em;
+}
+	
+article .fab{
+	width:20%;
+	font-size:30px;
+	padding-top:20px;
+	text-align:center;
+	
+}
+.fab {
+    color:white;
+    
+	
+}
+.video {
+	max-width:100%;
+	
+}
+
+/*****************FOOTER ***********************/
+
+
+h4{
+	font-family: "Bodega Sans";
+	
+	
+}
+footer {
+	display:flex;
+	flex-direction:column;
+    text-align: center;
+    padding-top: 80px;
+	color:white;
+	
+    
+}
+
+.footer nav a{
+    color:white;
+    
+    padding: 5px;
+}
+.footer p{
+	color:lightgrey;
+}
+
+
+
+.footer img {
+    width: 80px;
+    
+}
+.afterfooter{
+	color:lightgrey;
+	text-align:center;
+	padding:30px;
+}
+.afterfooter a{
+	color:white;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	
+    body{
+    	padding:25px;
+    }
+	main{
+	width:90%;
+	padding:25px;
+	
+}	
+	
+	.moto{
+		flex-direction:column;
+		justify-content:space-around;
+		
+	}	
+	.moto article{
+		width:100%;
+		margin-bottom:20px;
+		
+	}
+    .detail{
+		flex-direction:column;
+	}
+	.detail article{
+		width:100%;
+		text-align:center;
+		padding:15px;
+	}
+
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+
+
+	
+	header{
+		flex-direction:column;
+		background: linear-gradient(165deg, white 0%, white 49%, #444 49%, #444 100%);
+	
+	}
+	header img{
+		width:200px;
+	}
+	header nav{
+		
+		text-align:center;
+		font-size:16px;
+		margin-top:10px;
+	}
+	
+}
